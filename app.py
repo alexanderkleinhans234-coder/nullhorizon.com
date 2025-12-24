@@ -10,5 +10,9 @@ def index():
 def demo_hn():
     return render_template("demo-hn.html")
 
+@app.route("/demo/hn-post")
+def demo_hn_post():
+    return render_template("demo-hn-post.html")
+
 if __name__ == "__main__":
     app.run(debug=True)
